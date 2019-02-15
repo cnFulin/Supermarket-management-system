@@ -6,26 +6,26 @@
       </div>
       <div v-for="o in 1" :key="o" class="text item"></div>
       <el-form
-        :model="ruleForm"
+        :model="shopForm"
         status-icon
         :rules="rules"
-        ref="ruleForm"
+        ref="shopForm"
         label-width="110px"
         class="demo-ruleForm"
         size="mini"
       >
         <el-form-item label="商品条形码：" prop="name">
-          <el-input v-model="ruleForm.name"></el-input>
+          <el-input v-model="shopForm.name"></el-input>
         </el-form-item>
 
         <el-form-item label="商品数量：" prop="num">
-          <el-input v-model="ruleForm.num"></el-input>
+          <el-input v-model="shopForm.num"></el-input>
           <span class="text">计量商品单位为千克</span>
         </el-form-item>
 
         <el-form-item>
-          <el-button size="mini" type="success" @click="Addorder('ruleForm')">加入订单</el-button>
-          <el-button size="mini" type="success" plain @click="outbound('ruleForm')">重新出库</el-button>
+          <el-button size="mini" type="success" @click="Addorder('shopForm')">加入订单</el-button>
+          <el-button size="mini" type="success" plain @click="outbound('shopForm')">重新出库</el-button>
         </el-form-item>
       </el-form>
 
@@ -105,7 +105,7 @@ export default {
           discounts:'',
           refund:''
       }],
-      ruleForm: {
+      shopForm: {
         name: "",
         num: ""
       },
@@ -116,7 +116,7 @@ export default {
               vipcard:[{required:true,message:'请输入会员卡号',trigger:'blur'}]
           
       },
-      ruleForm2: {
+      ruleForm: {
           vipcard:''
       },
     };

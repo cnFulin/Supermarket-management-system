@@ -30,14 +30,16 @@ export default {
       ruleForm: {
         orderId: ""
       },
-      rules: {}
+      rules: {
+        orderId:[{required:true,message:'请输入订单号',trigger:'blur'}]
+      }
     };
   },
   methods: {
     Addorder(form) {
       this.$refs[form].validate(valid => {
         if (valid) {
-          alert("查询成功");
+          
         }
       });
     }

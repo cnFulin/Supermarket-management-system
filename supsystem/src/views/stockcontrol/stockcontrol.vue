@@ -77,8 +77,8 @@
 
         <el-table-column label="管理">
           <template slot-scope="scope">
-            <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-            <el-button size="mini" type="danger" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+            <el-button size="mini" type="primary" @click="handleEdit(scope.$index, scope.row)"><i class="el-icon-edit"></i>编辑</el-button>
+            <el-button size="mini" type="danger" @click="handleDelete(scope.$index, scope.row)"><i class="el-icon-delete"></i>删除</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -101,7 +101,8 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+          storage:'10'
         },
         {
           code: "123",
@@ -112,7 +113,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+          storage:'10'
+
         },
         {
           code: "123",
@@ -123,7 +126,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+          storage:'10'
+
         },
         {
           code: "123",
@@ -134,7 +139,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         },
         {
           code: "123",
@@ -145,7 +152,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         },
         {
           code: "123",
@@ -156,7 +165,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         },
         {
           code: "123",
@@ -167,7 +178,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         },
         {
           code: "123",
@@ -178,7 +191,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         },
         {
           code: "123",
@@ -189,7 +204,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         },
         {
           code: "123",
@@ -200,7 +217,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         },
         {
           code: "123",
@@ -211,7 +230,9 @@ export default {
           markttPrice: "3",
           inventory: "125",
           inventoryPrice: 625,
-          salesAllPrice: 1580
+          salesAllPrice: 1580,
+                    storage:'10'
+
         }
       ],
       ruleForm: {

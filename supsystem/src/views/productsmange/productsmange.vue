@@ -40,54 +40,54 @@
         </el-row>
       </el-form>
       <el-table :data="tableData" style="width: 100%">
-        <el-table-column label="商品条形码" width="120">
+        <el-table-column label="商品条形码" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.code }}</span>
           </template>
         </el-table-column>
-        <el-table-column label="商品名称" width="120">
+        <el-table-column label="商品名称" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.name }}</span>
           </template>
         </el-table-column>
 
-        <el-table-column label="所属分类" width="120">
+        <el-table-column label="所属分类" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.classify }}</span>
           </template>
         </el-table-column>
 
-        <el-table-column label="售价(元)" width="120">
+        <el-table-column label="售价(元)" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.price }}</span>
           </template>
         </el-table-column>
 
-        <el-table-column label="促销价(元)" width="120">
+        <el-table-column label="促销价(元)" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.promotionPrice }}</span>
           </template>
         </el-table-column>
 
-        <el-table-column label="市场价" width="120">
+        <el-table-column label="市场价" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.markttPrice }}</span>
           </template>
         </el-table-column>
 
-        <el-table-column label="库存" width="120">
+        <el-table-column label="库存" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.inventory }}</span>
           </template>
         </el-table-column>
 
-        <el-table-column label="库存总额(元)" width="120">
+        <el-table-column label="库存总额(元)" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.inventoryPrice }}</span>
           </template>
         </el-table-column>
 
-        <el-table-column label="销售总额(元)" width="120">
+        <el-table-column label="销售总额(元)" width="110">
           <template slot-scope="scope">
             <span>{{ scope.row.salesAllPrice }}</span>
           </template>
@@ -95,8 +95,8 @@
 
         <el-table-column label="管理">
           <template slot-scope="scope">
-            <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-            <el-button size="mini" type="danger" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+            <el-button type="primary" size="mini" @click="handleEdit(scope.$index, scope.row)"><i class="el-icon-edit"></i>编辑</el-button>
+            <el-button  size="mini" type="danger" @click="handleDelete(scope.$index, scope.row)"> <i class="el-icon-delete"></i>删除</el-button>
           </template>
         </el-table-column>
       </el-table>
